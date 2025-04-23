@@ -14,7 +14,7 @@
 // Definir la función principal
 int main() {
     double dx = L / (N - 1);  // - Espacio entre los puntos de la barra
-    double dt = 0.5;  // - Paso de tiempo
+    double dt = (dx * dx) / (2 * ALPHA);  // - Paso de tiempo
     int steps = (int) (T_TOTAL / dt);  // - Número de pasos en el tiempo
 
     // Establcer arreglos para almacenar temperaturas
